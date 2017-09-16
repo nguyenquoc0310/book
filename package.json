@@ -34,7 +34,8 @@
     "morgan": "^1.8.2",
     "nodemon": "^1.12.1",
     "rxjs": "^5.4.2",
-    "zone.js": "^0.8.14"
+    "zone.js": "^0.8.14",
+    "typescript": "~2.3.3"
   },
   "devDependencies": {
     "@angular/cli": "1.4.0",
