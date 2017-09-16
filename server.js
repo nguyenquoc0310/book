@@ -5,7 +5,7 @@ var morgan = require('morgan');
 
 var app = new express();
 
-var port = process.env.Port || 3000;
+var port = process.env.Port || 5000;
 var api = require('./server/routes/api');
 
 app.use(express.static(path.join(__dirname, 'dist')));
