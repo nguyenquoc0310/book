@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Edit Book</h1>
+  <form (submit)="updateBook()">
+    <div class="form-group">
+      <label>Title </label>
+      <input type="input" class="form-control" name="title" placeholder="Title" [(ngModel)]="book.title" >
+    </div>
+    <div class="form-group">
+      <label>Description </label>
+      <input type="input" class="form-control" name="description" placeholder="Description" [(ngModel)]="book.description">
+    </div>
+
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>

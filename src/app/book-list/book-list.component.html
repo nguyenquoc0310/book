@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>List books</h2>
+  <p>This is all book in database :</p>
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let book of books">
+      <td class="col-md-4" (click)="selectBook(book)">{{book.title}}</td>
+      <td class="col-md-5" (click)="selectBook(book)">{{book.description}}</td>
+      <td class="col-md-3">
+        <input type="button" value="Update" class="btn btn-primary" (click)="updateBookSelected(book)">
+        <input type="button" value="Delete" class="btn btn-danger" (click)="deleteBook(book)">
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <input type="button" value="New +" class="btn btn-info" (click)="showCreateBook()">
+</div>

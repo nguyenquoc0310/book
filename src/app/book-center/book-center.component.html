@@ -1,0 +1,15 @@
+<app-book-list [books]="books"
+               (onSelectBook)="selectBook($event)"
+               (onUpdateBookSelected)="updateBookSelected($event)"
+               (onDeleteBook)="deleteBook($event)"
+               (onShowCreateBook)="showCreateBook($event)">
+</app-book-list>
+
+<app-book-detail *ngIf="bookSelected && isBookDetail" [book]="bookSelected"></app-book-detail>
+
+<app-book-edit *ngIf="bookSelected && isBookUpdate"
+               (onUpdateBook)="updateBook($event)"
+               [book]="bookSelected">
+</app-book-edit>
+
+<app-book-new *ngIf="isBookCreate" (onCreateBook)="createBook($event)"></app-book-new>
