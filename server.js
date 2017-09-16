@@ -5,7 +5,7 @@ var morgan = require('morgan');
 
 var app = new express();
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 var api = require('./server/routes/api');
 
 const forceSSL = function() {
